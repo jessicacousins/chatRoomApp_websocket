@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <form class="form-join">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="text" id="room" placeholder="Chat Room" required />
+        <button type="submit">Join Now</button>
+      </form>
+    </main>
+  </body>
+</html>

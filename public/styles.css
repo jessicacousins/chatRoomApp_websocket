@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #15202b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  background: #192734;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  padding: 10px;
+  border-bottom: 2px solid #38444d;
+}
+
+input,
+button {
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+}
+
+input {
+  flex-grow: 1;
+  background-color: #202c33;
+  color: #fff;
+}
+
+button {
+  background-color: #1da1f2;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a91da;
+}
+
+.chat-display {
+  list-style: none;
+  overflow: auto;
+  height: 400px;
+  padding: 10px;
+}
+
+.post {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #253341;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.post--left {
+  align-self: flex-start;
+  background-color: #c4e1f4;
+}
+
+.post--right {
+  align-self: flex-end;
+  background-color: #253341; 
+}
+
+.post__header {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.post__header--name {
+  font-weight: bold;
+}
+
+.post__header--time {
+  font-size: 0.7rem;
+  opacity: 0.75;
+}
+
+.post__text {
+  font-size: 0.9rem;
+}
+
+.user-list,
+.room-list,
+.activity {
+  padding: 10px;
+  font-style: italic;
+  color: #8899a6;
+  font-size: 0.9rem;
+}
+
+.user-list em,
+.room-list em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.activity {
+  font-size: 0.85rem;
+  text-align: center;
+}
